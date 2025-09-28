@@ -60,15 +60,31 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             planeNode.eulerAngles.x = -.pi/2
             node.addChildNode(planeNode)
             
-            if let pokeScnene = SCNScene(named: "art.scnassets/Lugia.scn") {
-                if let pokeNode = pokeScnene.rootNode.childNodes.first {
-                    print("Lugia")
-                    pokeNode.scale = SCNVector3(0.0002, 0.0002, 0.0002)
-                    pokeNode.position = SCNVector3(0.01, -0.02, 0.02)
-                    pokeNode.eulerAngles.y = -.pi/6.3
-                    pokeNode.eulerAngles.z = .pi/3
-                    pokeNode.eulerAngles.x = .pi/1.8
-                    planeNode.addChildNode(pokeNode)
+            if imageAnchor.referenceImage.name == "charli" {
+                if let pokeScnene = SCNScene(named: "art.scnassets/Lugia.scn") {
+                    if let pokeNode = pokeScnene.rootNode.childNodes.first {
+                        print("Lugia")
+                        pokeNode.scale = SCNVector3(0.0002, 0.0002, 0.0002)
+                        pokeNode.position = SCNVector3(0.01, -0.02, 0.02)
+                        pokeNode.eulerAngles.y = -.pi/6.3
+                        pokeNode.eulerAngles.z = .pi/3
+                        pokeNode.eulerAngles.x = .pi/1.8
+                        planeNode.addChildNode(pokeNode)
+                    }
+                }
+            }
+            
+            if imageAnchor.referenceImage.name == "lucario" {
+                if let pokeScnene = SCNScene(named: "art.scnassets/Lucario.scn") {
+                    if let pokeNode = pokeScnene.rootNode.childNodes.first {
+                        print("Lucario")
+                        pokeNode.scale = SCNVector3(0.0007, 0.0007, 0.0007)
+                        pokeNode.position = SCNVector3(0, 0, 0.03)
+                        pokeNode.eulerAngles.y = -.pi/7.3
+                        pokeNode.eulerAngles.z = -.pi/7
+                        pokeNode.eulerAngles.x = .pi/15.6
+                        planeNode.addChildNode(pokeNode)
+                    }
                 }
             }
         }

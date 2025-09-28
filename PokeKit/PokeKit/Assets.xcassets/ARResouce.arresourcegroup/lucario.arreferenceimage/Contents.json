@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "poke.png",
+      "filename" : "lucario.png",
       "idiom" : "universal"
     }
   ],
@@ -10,6 +10,6 @@
     "version" : 1
   },
   "properties" : {
-    "width" : 0.053935538160469663
+    "width" : 0.065000000000000002
   }
 }
